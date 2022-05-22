@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Reset & Default -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Style Custom -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Vuejs -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Random Quote Machine</title>
+</head>
+<body>
+    <div id="app" class="container">
+        <div class="flex flow container-card">
+           <quote-card :currentQuote="currentQuote"></quote-card>
+
+            <a href="#" @click="newQuote" class="text-dark ff-sans bg-white btn">New quote</a>
+        </div>
+    </div>
+    <script src="quotes.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
